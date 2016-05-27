@@ -11,15 +11,13 @@ LIMITATIONS:
 
 using namespace std;
 
+// specify matrix dimensions here
 #define ROW_SIZE 3
 #define COL_SIZE 3
 
 class Matrix{
 private:
-//    const int row = 1;
-//    const int col = 1;
     int arr[ROW_SIZE][COL_SIZE];
-//    int arr[row][col];
 public:
     // default c-tor
     Matrix()
@@ -64,7 +62,7 @@ public:
         cout << endl << endl;
     }
 
-    // currently works with 2x2 matrices only
+    // currently tested with square matrices only
     Matrix operator * (Matrix A)
     {
         Matrix product;
